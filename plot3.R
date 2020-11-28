@@ -16,7 +16,7 @@ df$Sub_metering_3 <- as.numeric(df$Sub_metering_3)
 
 df$datetime <- ymd_hms(paste(df$Date, df$Time))
 
-plot(df$datetime, df$Sub_metering_1, ylab= "Energy sub metering", type = "n")
+plot(df$datetime, df$Sub_metering_1, ylab= "Energy sub metering", type = "n", xlab = NA)
 lines(df$datetime, df$Sub_metering_1, col="black")
 lines(df$datetime, df$Sub_metering_2, col="red")
 lines(df$datetime, df$Sub_metering_3, col="blue")

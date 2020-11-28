@@ -11,7 +11,7 @@ df$Global_active_power <- as.numeric(df$Global_active_power)
 df$datetime <- ymd_hms(paste(df$Date, df$Time))
 
 plot(df$datetime, df$Global_active_power, type="l", 
-     ylab = "Global Active Power (kilowatts)")
+     ylab = "Global Active Power (kilowatts)", xlab = NA)
 
 dev.copy(png, "plot2.png", width  = 480,
          height = 480)
