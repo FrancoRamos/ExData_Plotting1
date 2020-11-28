@@ -34,6 +34,8 @@ plot(df$datetime, df$Sub_metering_1, ylab= "Energy sub metering", type = "n", xl
 lines(df$datetime, df$Sub_metering_1, col="black")
 lines(df$datetime, df$Sub_metering_2, col="red")
 lines(df$datetime, df$Sub_metering_3, col="blue")
+legend("topright", inset =0.008, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
+       col=c("black", "red", "blue"), lty=1, box.lty=0,cex=0.75)
 
 plot(df$datetime, df$Global_reactive_power, type="l", xlab="datetime")
 
