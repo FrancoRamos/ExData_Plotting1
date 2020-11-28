@@ -1,4 +1,4 @@
-getw()
+getwd()
 df <- read.csv2("household_power_consumption.txt")
 head(df)
 str(df)
@@ -16,4 +16,3 @@ hist(df$Global_active_power, col="red", main="Global Active Power",
 dev.copy(png, "plot1.png", width  = 480,
          height = 480)
 dev.off()
-
