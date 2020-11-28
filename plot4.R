@@ -40,8 +40,7 @@ legend("topright", inset =0.008, legend = c("Sub_metering_1", "Sub_metering_2", 
 plot(df$datetime, df$Global_reactive_power, type="l", xlab="datetime")
 
 
-dev.copy(png, "plot4.png", width  = 480,
-         height = 480)
+dev.copy(png, "plot4.png")
 dev.off()
 par(mfrow=c(1,1))
 

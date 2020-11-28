@@ -25,6 +25,5 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
        col=c("black", "red", "blue"), lty=1)
 
 
-dev.copy(png, "plot3.png", width  = 480,
-         height = 480)
+dev.copy(png, "plot3.png")
 dev.off()
